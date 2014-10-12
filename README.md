@@ -32,4 +32,4 @@ Assets (Images, Fonts etc.)
 	var app = require('koa')();
 	app.use(route.get('/assets/:path*', assets));
 
-To properly serve your other assets, we need to supply a path to our middleware. This path should be the first argument passed into the middleware and would suggest using `koa-route` to do this. This will serve anything that is not a `.css` or `.js` file.
+To properly serve your other assets, we need to supply a path to our middleware. This path should be the first argument passed into the middleware and would suggest using [koa-route](https://github.com/koajs/route) to do this. This will serve anything that is not a `.css` or `.js` file.
